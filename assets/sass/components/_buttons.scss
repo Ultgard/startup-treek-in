@@ -1,0 +1,38 @@
+.button-group{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    .button{
+        margin: 0 .5rem;
+    }
+    @media (min-width: 768px) {
+        margin-top: 0;
+    }
+}
+
+.button{
+    @extend %button;
+    @include transicion (all, 0.4s);
+    &:hover{
+        background: $pale-pink;
+    }
+    &:focus{
+        background: $silver-chalice;
+    }
+}
+
+.button-primary{
+    @extend %button;
+    background: $ball-blue;
+    color: $white;
+    &:hover{
+        background: $middle-blue;
+    }
+    &:focus{
+        background: $silver-chalice;
+    }
+}
+
+.button-large{
+    @extend %button-large;
+}

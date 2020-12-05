@@ -1,0 +1,32 @@
+// style.scss # Manifiesto
+
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+@import 'abstracts/transitions';
+@import 'abstracts/animations';
+
+// vendors
+@import 'vendors/fontawesome-5.15.1/fontawesome';
+@import 'vendors/fontawesome-5.15.1/solid';
+@import 'vendors/fontawesome-5.15.1/regular';
+
+// base
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+
+// layout
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+
+// components
+@import 'components/buttons';
+@import 'components/cards';
+
+// pages
+
+// themes

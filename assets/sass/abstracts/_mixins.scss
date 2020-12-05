@@ -1,0 +1,12 @@
+@mixin conversor-tamano($propiedad, $objetivo) {
+    $resultado: ($objetivo / $normal);
+    #{$propiedad}: #{$resultado}rem;
+}
+
+@mixin clearfix{
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

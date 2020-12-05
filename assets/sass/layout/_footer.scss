@@ -1,0 +1,34 @@
+.footer{
+    @include conversor-tamano(font-size, $normal);
+    font-family: $raleway;
+    background: $raising-black;
+    color: $lavender-gray;
+    padding: 3rem 0;
+    .container{
+        text-align: center;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+    }
+}
+
+.footer-list{
+    @extend %list-clean;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    &__link{
+        @extend %link-menu;
+        color: $lavender-gray;
+        &:hover{
+            color: $ball-blue;
+        }
+    }
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+}

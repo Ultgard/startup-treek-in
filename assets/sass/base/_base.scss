@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $open-sans;
+    @include conversor-tamano(font-size, $small);
+    color: $raising-black;
+    line-height: $line-height-body;
+    font-weight: $regular;
+}
+
+ul{
+    list-style: disc;
+    padding-left: 1rem;
+    li{
+        padding-left: 1rem;
+    }
+}
+
+.text-center{
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+.hero{
+    @include conversor-tamano(font-size, $normal);
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.mountain{
+    width: 160%;
+    margin: -5% 0 0 -58%;
+    z-index: -1;
+    position: relative;
+    @media (min-width: 768px) {
+        margin: -15% 0 0 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+#trekking{
+    border: 1px solid #ccc;
+    transform-origin: left;
+    animation: walk 2s linear forwards;
+    animation-delay: .4s;
+}
+
+.graph{
+    margin-bottom: 1rem;
+    &__plane{
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: graph-base .5s linear forwards;
+    }
+    
+    &__bar-a{
+        transform: scaleY(0);
+        transform-origin: bottom;
+        animation: graph .5s linear forwards;
+        animation-delay: .4s;
+    }
+    
+    &__bar-b{
+        transform: scaleY(0);
+        transform-origin: bottom;
+        animation: graph .5s linear forwards;
+        animation-delay: .6s;
+    }
+}
+
+
+.prices{
+    background: url(../images/bg-price.svg) no-repeat 68% top;
+    background-size: cover;
+    padding: 15rem 0 4rem 0;
+    h2{
+        color: $white;
+    }
+    @media (min-width: 768px) {
+        background-position-y: center;
+    }
+}

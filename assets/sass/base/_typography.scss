@@ -1,0 +1,23 @@
+h1,h2,h3,h4{
+    font-family: $raleway;
+    line-height: $line-height-title;
+}
+
+h1{
+    @include conversor-tamano(font-size, $xxxxx-large);
+    font-weight: $bold;
+    margin-bottom: 1rem;
+}
+
+h2{
+    @include conversor-tamano(font-size, $xxx-large);
+    font-weight: $bold;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+h3{
+    @include conversor-tamano(font-size, $x-large);
+    font-weight: $bold;
+    margin-bottom: 1rem;
+}
